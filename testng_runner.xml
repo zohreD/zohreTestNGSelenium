@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Vytrack Automation" verbose="1">
+    <test name="Vytrack Smoke Test">
+       <classes>
+           <class name="com.cybertek.tests.day11_webtables.webtableExample">
+               <methods>
+                   <exclude name="getHeaders"></exclude>
+               </methods>
+           </class>
+       </classes>
+    </test>
+</suite>
+
+<!--.* runs all the tests under @Test annotation but won't run main methods or stuff
+        <packages>
+            <package name=".*"></package>
+            <package name="com.cybertek.tests.day14_extent_reports"></package>
+
+        </packages>
+
+
+        <classes>
+            <class name="com.cybertek.tests.day14_extent_reports.ExtentDemoTest"></class>
+        </classes>
+        
+        -->
